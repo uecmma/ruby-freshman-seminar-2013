@@ -1,1 +1,3 @@
-main = interact $ show . (\ [a,b,c,d] -> sqrt((a - c) ^^ 2 + (b - d) ^^ 2)) . map(read::String->Float) . words
+import Data.List
+
+main = interact $ show . head . tail . reverse . sort . map(read::String->Float) . words

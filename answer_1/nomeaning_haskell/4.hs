@@ -1,3 +1,3 @@
-list = [3.2, 1, -1.2, 0, 9, 22]
+rep [s, c] = concat $ replicate ((read::String->Int) c) s
 
-main = putStrLn $ show $ sum list
+main = interact $ rep . words

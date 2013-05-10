@@ -1,4 +1,2 @@
--- 入力形式
--- 空白区切りで数値を与える
-
-main = interact $ unwords . reverse . words
+mygcd [a,b] = gcd a b
+main = interact $ show . mygcd . map(read::String->Integer) . words

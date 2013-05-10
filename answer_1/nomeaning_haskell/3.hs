@@ -1,4 +1,1 @@
-solve f | abs f <= 100 = "Yes"
-        | otherwise = "No"
-
-main = interact $ solve . (read::String->Float)
+main = interact $ show . sum . map(read::String->Integer) . words

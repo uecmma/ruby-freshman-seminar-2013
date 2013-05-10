@@ -1,3 +1,3 @@
 import Data.List
 
-main = interact $ concat . map(++ ['\n']) . map(show) . sort . map(read::String->Int) . words 
+main = interact $ show . head . reverse . sort . map(read::String->Float) . words
